@@ -22,7 +22,7 @@ const Dashboard = () => {
                     .from('companies')
                     .select('*')
                     .eq('user_id', user.id)
-                    .single();
+                    .maybeSingle();
 
                 setCompany(companyData);
 

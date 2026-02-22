@@ -42,10 +42,10 @@ const Profile = () => {
                 .from('companies')
                 .select('*')
                 .eq('user_id', user.id)
-                .single();
+                .maybeSingle();
 
-            if (error && error.code !== 'PGRST116') throw error;
-            if (data) setCompany(data);
+            if (error) throw error;
+            if (data) setCompany(prev => ({ ...prev, ...data }));
         } catch (error) {
             console.error('Error loading company:', error);
         } finally {

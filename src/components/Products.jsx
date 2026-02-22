@@ -192,7 +192,7 @@ const Products = () => {
                 .from('companies')
                 .select('id, product_limit')
                 .eq('user_id', user.id)
-                .single();
+                .maybeSingle();
 
             if (!company) return;
             setCompanyId(company.id);
