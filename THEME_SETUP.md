@@ -23,7 +23,7 @@ A theme toggle button has been added to the sidebar with the following features:
 The following components automatically adapt to the selected theme:
 
 1. **Sidebar Logo**
-   - Dark mode: Uses white/colored logo (`souq-route-logo.png`)
+   - Dark mode: Uses white/colored logo (`Souq_Route_white_red.png`)
    - Light mode: Uses black logo (`souq-route-logo-black.png`)
 
 2. **Login Page Logo**
@@ -38,7 +38,7 @@ The following components automatically adapt to the selected theme:
 
 ### Logo Files
 Located in `/public/images/`:
-- `souq-route-logo.png` - White/colored logo for dark backgrounds
+- `Souq_Route_white_red.png` - White/colored logo for dark backgrounds
 - `souq-route-logo-black.png` - Black logo for light backgrounds
 
 ### Favicon

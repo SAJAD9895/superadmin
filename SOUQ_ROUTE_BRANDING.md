@@ -8,7 +8,7 @@ The admin panel has been successfully updated with Souq Route branding and the s
 ### 1. Logo Integration
 - **Location**: `/public/images/`
 - **Files Added**:
-  - `souq-route-logo.png` - Main logo with red "Route" text
+  - `Souq_Route_white_red.png` - Main logo with red "Route" text
   - `souq-route-logo-black.png` - Black version of the logo
 
 ### 2. Logo Implementation
