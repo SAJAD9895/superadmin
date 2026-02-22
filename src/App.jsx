@@ -7,6 +7,7 @@ import Profile from './components/Profile';
 import Products from './components/Products';
 import Leads from './components/Leads';
 import Login from './components/Login';
+import ResetPassword from './components/ResetPassword';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 import { ErrorProvider } from './contexts/ErrorContext';
 import { ThemeProvider } from './contexts/ThemeContext';
@@ -53,6 +54,11 @@ function App() {
               <Route element={<PublicLayout />}>
                 <Route path="/login" element={<Login />} />
               </Route>
+
+              {/* Stand-alone route — must be outside PublicLayout because
+                  Supabase creates a temporary session when the email link
+                  is clicked. PublicLayout would redirect logged-in users away. */}
+              <Route path="/reset-password" element={<ResetPassword />} />
 
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>

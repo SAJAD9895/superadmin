@@ -26,7 +26,7 @@ const Sidebar = () => {
         <div className="sidebar glass">
             <div className="mb-8" style={{ textAlign: 'center' }}>
                 <img
-                    src={theme === 'dark' ? '/images/souq-route-logo.png' : '/images/souq-route-logo-black.png'}
+                    src={theme === 'dark' ? '/images/Souq_Route_white_red.png' : '/images/souq-route-logo-black.png'}
                     alt="Souq Route"
                     style={{
                         width: '100%',

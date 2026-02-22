@@ -58,7 +58,7 @@ const SignInForm = ({ onForgotPassword, theme }) => {
             <div className="mb-8 text-center">
                 <img
                     src={theme === 'dark'
-                        ? '/images/souq-route-logo.png'
+                        ? '/images/Souq_Route_white_red.png'
                         : '/images/souq-route-logo-black.png'}
                     alt="Souq Route"
                     style={{ width: '100%', maxWidth: '200px', height: 'auto', margin: '0 auto 20px', display: 'block' }}
