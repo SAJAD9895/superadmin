@@ -3,6 +3,26 @@
 
 ---
 
+## ⚠️ PART 0 — Fix OTP Expired Error (Do This First!)
+
+If you see `otp_expired` in the reset link URL, the token lifetime is too short.
+
+### Steps (do for BOTH Supabase projects):
+1. Go to Supabase Dashboard → **Authentication → Settings** (or URL Configuration)
+2. Scroll to **"Email OTP Expiry"** (or "Token Expiry" / "JWT Expiry")
+3. Set it to: **`86400`** seconds = 24 hours (default is often 3600 = 1 hour)
+4. Click **Save**
+
+### Staging:
+https://supabase.com/dashboard/project/gmgrsuynufoycvnqaltj/settings/auth
+
+### Production:
+https://supabase.com/dashboard/project/akwycltnkqcrwezqldbt/settings/auth
+
+> Look for **"Email OTP Expiry"** field → change to `86400` → Save
+
+---
+
 ## PART 1 — Supabase Auth URL Configuration
 
 You MUST whitelist your custom domains in Supabase Auth settings.
